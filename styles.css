@@ -63,3 +63,57 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* home.html */
+
+.streetwear {
+    margin: 0;
+    height: 100vh;
+    background: url('background.jpg') center/cover no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 3rem;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+/* tagline */
+.tag {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+
+.enter {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+.enter:hover {
+    opacity: 0.5;
+}

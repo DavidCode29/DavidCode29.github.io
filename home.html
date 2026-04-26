@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MC Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>David's Helpful Guide"</h1>
+        <p class="subtitle">OOC.</p>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Trading Conversion</a>
+        <a href="#">Photo Gallery</a>
+        <a href="#"></a>
+    </nav>
+
+    <section class="box">
+        <h2>External Links</h2>
+        <ul>
+            <li><a href="https://docs.google.com/document/d/1tUjMRBFfYagPEbo1AhW3ZqFRkt85BNSKPkSSQ920wPc/edit?tab=t.0">SOS Bylaws</a></li>
+            <li><a href="https://docs.google.com/document/d/1N2P4GVn59dra1j67g0v2jp-fCP2QZZptFQEkwNo6pyM/edit?tab=t.0">Prospect Guide</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1v_hcfuyhJ7H14wYgkZUTpC00NpBIZpdJ3F43EiQpsaE/edit?gid=1425899933#gid=1425899933">Deal Spreadsheet</a></li>
+        </ul>
+    </section>
+
+    <section class="box">
+        <h2>Character Info</h2>
+        <p><strong>Name:</strong> Clarence West</p>
+        <p><strong>Rank:</strong> Prospect</p>
+        <p><strong>Codename:</strong> "Cookie Monster"</p>
+        <p><strong>Status:</strong> ACTIVE</p>
+    </section>
+
+    <section class="box">
+        <h2>Notes</h2>
+        <p id="daily-quote">Loading...</p>
+    </section>
+
+</div>
+<script>
+const quotes = [
+    "Keep your head down. Watch rival clubs. Trust the patch, not the man.",
+    "Ride hard or don’t ride at all.",
+    "The road decides who you are.",
+    "Loyalty is thicker than blood in this life.",
+    "Engines talk louder than words.",
+    "Respect is earned one mile at a time.",
+    "Never trust a quiet rival."
+];
+
+
+const today = new Date();
+const index = today.getDate() % quotes.length;
+
+document.getElementById("daily-quote").innerText = quotes[index];
+</script>
+</body>
+</html>
