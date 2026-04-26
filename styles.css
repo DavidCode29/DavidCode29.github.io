@@ -70,9 +70,10 @@ a:hover {
 .streetwear {
     margin: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #111;
-    color: #e0e0e0;
-    font-family: "Courier New", monospace;
 }
 
 /* darker overlay, more subtle */
@@ -85,16 +86,12 @@ a:hover {
 
 /* center content like a terminal */
 .center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
     border: 1px solid #333;
     padding: 30px;
     background-color: #1a1a1a;
     width: 90%;
     max-width: 600px;
-    margin: auto;
 }
 
 /* logo matches your red theme */
