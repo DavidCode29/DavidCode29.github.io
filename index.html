@@ -40,10 +40,26 @@
 
     <section class="box">
         <h2>Notes</h2>
-        <p>Keep your head down. Watch rival clubs. Trust the patch, not the man.</p>
+        <p id="daily-quote">Loading...</p>
     </section>
 
 </div>
+<script>
+const quotes = [
+    "Keep your head down. Watch rival clubs. Trust the patch, not the man.",
+    "Ride hard or don’t ride at all.",
+    "The road decides who you are.",
+    "Loyalty is thicker than blood in this life.",
+    "Engines talk louder than words.",
+    "Respect is earned one mile at a time.",
+    "Never trust a quiet rival."
+];
 
+
+const today = new Date();
+const index = today.getDate() % quotes.length;
+
+document.getElementById("daily-quote").innerText = quotes[index];
+</script>
 </body>
 </html>
