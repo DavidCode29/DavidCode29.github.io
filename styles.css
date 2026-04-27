@@ -80,10 +80,14 @@ a:hover {
 
 /* darker overlay, more subtle */
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.7);
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* center content like a terminal */
